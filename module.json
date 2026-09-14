@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "agreement-controls",
+  "version": "1.0.2",
+  "minCoreVersion": "0.4.6",
+  "title": "Agreement Controls",
+  "description": "Owner-selected local agreement-prompt handling and backed-up downloaded-app launch metadata changes; never changes consent records.",
+  "disableDescription": "Stops automatic prompt closing and restores matching backed-up app launch metadata. Agreement prompts may return. Conflicting app changes are reported for review; recorded consent is never changed.",
+  "publisher": "Unknown Digital and Unknown Suite contributors",
+  "license": "MIT",
+  "requiresRoot": true,
+  "entry": "module.js",
+  "permissions": [
+    "Runs as root; declarations are not a sandbox",
+    "Observes application lifecycle events and closes the known optional LG account-prompt apps when enabled",
+    "Backs up and changes only recognized downloaded-app agreement launch metadata; restores only matching owned changes"
+  ],
+  "actions": {
+    "status": {
+      "title": "View current status",
+      "description": "Shows whether prompt handling is requested and its watcher is running, plus launch-metadata changes, errors and any pending app-manager refresh.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "health": {
+      "title": "Check module health",
+      "description": "Checks that the requested prompt watcher is running and its launch-policy report has no errors. Not every prompt or future app update is guaranteed covered.",
+      "readOnly": true,
+      "parameters": {}
+    },
+    "maintenance": {
+      "title": "Reapply saved settings",
+      "description": "Ensures the prompt watcher is running if prompt handling is already saved as ON. It does not accept agreements, enable an OFF preference or restart the TV's app manager.",
+      "readOnly": false,
+      "parameters": {}
+    },
+    "setPrompts": {
+      "title": "Apply local prompt control",
+      "readOnly": false,
+      "parameters": {
+        "enabled": {
+          "type": "boolean",
+          "title": "Requested automatic prompt handling",
+          "description": "ON closes recognized LG account-agreement prompts and applies backed-up local app launch-metadata changes. OFF stops the watcher and restores matching changes. Neither choice accepts or withdraws agreements.",
+          "currentValue": {
+            "path": [
+              "enabled"
+            ]
+          }
+        }
+      },
+      "description": "Changes automatic handling of recognized optional LG account prompts and supported downloaded-app launch checks. It cannot grant access to LG services or guarantee an app will launch without agreements."
+    },
+    "viewLog": {
+      "title": "View prompt-control log",
+      "readOnly": true,
+      "parameters": {},
+      "description": "Shows recent local prompt-watcher activity and errors, helping identify what was handled. It is not a record of your legal consent."
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "agreement-controls",
+  "version": "1.0.2",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "572234ff94a780da9248b867a9c6d208b18b702864d847e1cb4a42bfc1b560f3",
+      "bytes": 51
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "351ba46fc3dfe9e631667f04fb7da305b8605bb1974d09f2a811e92239b856d2",
+      "bytes": 32
+    },
+    {
+      "path": "Build.cmd",
+      "sha256": "3e66bb628af029a43d740f9ab5c4553e5ec2e80b59aece1e4b2b41d1a86049a3",
+      "bytes": 255
+    },
+    {
+      "path": "Build.ps1",
+      "sha256": "e26686fca8abc6b28b6aa79e922e610ac6087dd36f3c8c36683082c83beebf55",
+      "bytes": 1656
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "ed18054c1e42887a48a91b06aceb534235e77bb6d756a0776384d361cff0dac2",
+      "bytes": 1103
+    },
+    {
+      "path": "MODULE.md",
+      "sha256": "23322fddb2efba36ca3f33eb0e95c0fcef561306ced71f4d2094dbd764d6285e",
+      "bytes": 2193
+    },
+    {
+      "path": "OWNER_USE.md",
+      "sha256": "998f709fec86aeccc2d2eefb72d1cd161b09bfea67557dd24d3429dac10fd7b6",
+      "bytes": 1297
+    },
+    {
+      "path": "README.md",
+      "sha256": "5f5dd1a60419f3872cd74ad1d492e72c4c12b45ca85c6e15fc60e863cb63cc9f",
+      "bytes": 2959
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "a3e328ecf9269462d8df8c45d30d4934c184bdd14faf93c04446478946962532",
+      "bytes": 1024
+    },
+    {
+      "path": "SHA256SUMS.txt",
+      "sha256": "31bc1a3e1420c05899dbd8f958e09ffa3e18e9b5f3fcf0f4a6a43fb6fe586734",
+      "bytes": 95
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "53c653b665d4a2071d673883d81628a452989c49f0681cdca108fcb9992458ac",
+      "bytes": 482
+    },
+    {
+      "path": "agreement-controls-1.0.2.zip",
+      "sha256": "bcd7e8e170408285926a3501850210966aea2c9f9e4da8d792d985c79fa0ecfa",
+      "bytes": 15212
+    },
+    {
+      "path": "build-config.json",
+      "sha256": "346ba8e41ec698ab417e5674e6846a1130296559216b9b9b52575efc96582788",
+      "bytes": 973
+    },
+    {
+      "path": "build.js",
+      "sha256": "608d61aaec5b0e23b66538b373afd7dfad68f40693ec015439d22e003576fc0d",
+      "bytes": 3848
+    },
+    {
+      "path": "module-archive.js",
+      "sha256": "07a177a6367921e7c71e5909735712c9e00b26e8f50d20955680e7ddcbfbed09",
+      "bytes": 14682
+    },
+    {
+      "path": "module-support.js",
+      "sha256": "61a3ce4965b535df79f0ff4ce0d0bcd76a88c7cc38fdb9f5c5c4385bacfd06d9",
+      "bytes": 3244
+    },
+    {
+      "path": "module.js",
+      "sha256": "0838de8a53d36868edc30b6c7ad04e29a807830c1fa27822fb93320047631b74",
+      "bytes": 2185
+    },
+    {
+      "path": "module.json",
+      "sha256": "cd95f722a294aee7b463b57b340faa24116812d5886bd6537f70df6d6e0ae071",
+      "bytes": 2931
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "c7c11e24e2bdb61186482560e7900bdfef291c59b775db827461951f4c908560",
+      "bytes": 2235
+    },
+    {
+      "path": "package.json",
+      "sha256": "c51856f4210558a8e9757e5d8670b27de74d00ada2359c2b2b6869d3033d622c",
+      "bytes": 481
+    },
+    {
+      "path": "runtime/unknown-home-account-terms-guard.js",
+      "sha256": "16a25ab25091a397ef510118a0009e70677c37334decbd6389297a2076549bc2",
+      "bytes": 14544
+    },
+    {
+      "path": "runtime/unknown-home-eula-launch-policy.js",
+      "sha256": "f469bf2d38d84b7831ad65f6ca53b46e9f50b18efd146ddfbc825197defcdbac",
+      "bytes": 17627
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "agreement-controls",
+  "version": "1.0.2",
+  "coreVersion": "0.4.6",
+  "home": false,
+  "inputs": [
+    {
+      "source": "LICENSE",
+      "target": "LICENSE"
+    },
+    {
+      "source": "MODULE.md",
+      "target": "README.md"
+    },
+    {
+      "source": "module-support.js",
+      "target": "module-support.js"
+    },
+    {
+      "source": "module.js",
+      "target": "module.js"
+    },
+    {
+      "source": "module.json",
+      "target": "module.json"
+    },
+    {
+      "source": "runtime/unknown-home-account-terms-guard.js",
+      "target": "runtime/unknown-home-account-terms-guard.js"
+    },
+    {
+      "source": "runtime/unknown-home-eula-launch-policy.js",
+      "target": "runtime/unknown-home-eula-launch-policy.js"
+    }
+  ],
+  "sourceFiles": [
+    "LICENSE",
+    "MODULE.md",
+    "module-support.js",
+    "module.js",
+    "module.json",
+    "runtime/unknown-home-account-terms-guard.js",
+    "runtime/unknown-home-eula-launch-policy.js"
+  ]
+}
