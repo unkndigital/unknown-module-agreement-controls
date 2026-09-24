@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
   "id": "agreement-controls",
-  "version": "1.0.2",
-  "minCoreVersion": "0.4.6",
+  "version": "1.1.0",
+  "minCoreVersion": "0.8.0",
   "title": "Agreement Controls",
   "description": "Owner-selected local agreement-prompt handling and backed-up downloaded-app launch metadata changes; never changes consent records.",
   "disableDescription": "Stops automatic prompt closing and restores matching backed-up app launch metadata. Agreement prompts may return. Conflicting app changes are reported for review; recorded consent is never changed.",
@@ -57,5 +57,6 @@
       "parameters": {},
       "description": "Shows recent local prompt-watcher activity and errors, helping identify what was handled. It is not a record of your legal consent."
     }
-  }
+  },
+  "updateStrategy": "enable"
 }

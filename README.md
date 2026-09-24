@@ -2,11 +2,11 @@
 
 Owner-selected local agreement-prompt handling and backed-up downloaded-app launch metadata changes; never changes consent records.
 
-**Public experimental release 1.0.2.** This repository contains only this module, its build tools and its installable ZIP. Unknown Core is a separate prerequisite; the legacy unkndigital/unknown-home repository is not the modular Core installer.
+**Public experimental release 1.1.0.** This repository contains only this module, its build tools and its installable ZIP. Unknown Core is a separate prerequisite; the legacy unkndigital/unknown-home repository is not the modular Core installer.
 
 ## Prerequisites
 
-- Install only on a TV you own, with existing owner-controlled root and Unknown Core 0.4.6 or newer. No rooting exploit, LG credentials, firmware or service-login bypass is supplied.
+- Install only on a TV you own, with existing owner-controlled root and Unknown Core 0.8.0 or newer. No rooting exploit, LG credentials, firmware or service-login bypass is supplied.
 - Keep independent recovery access and backups. Modules execute trusted code with root privileges; they are not sandboxed.
 - Read [module behavior and restoration](MODULE.md), [owner-use boundaries](OWNER_USE.md), and [security limits](SECURITY.md).
 
@@ -18,11 +18,15 @@ On Windows, run **Build.cmd**. It checks Node.js 20+ and npm, installs locked de
     npm test
     npm run build
 
-Output: dist/agreement-controls-1.0.2.zip and dist/SHA256SUMS.txt. PC architecture is independent of the TV JavaScript runtime. The initial reviewed candidate ZIP and its checksum are also at the repository root. Checksums verify bytes, not publisher identity or safety.
+Output: dist/agreement-controls-1.1.0.zip and dist/SHA256SUMS.txt. PC architecture is independent of the TV JavaScript runtime. The initial reviewed candidate ZIP and its checksum are also at the repository root. Checksums verify bytes, not publisher identity or safety.
 
 ## Install
 
-In Core, choose Install Modules from GitHub and enter https://github.com/unkndigital/unknown-module-agreement-controls. Select the module ZIP from Releases, inspect it and review before installing. Activation is a separate choice. No GitHub account or credentials are needed on the TV. Alternatively, transfer the module ZIP to /media/internal/.unknown-core/modules-inbox through your owner-controlled connection. Use the module ZIP, not GitHub's automatic source-code ZIP.
+In Core, choose Install Modules from GitHub and enter https://github.com/unkndigital/unknown-module-agreement-controls. Select the module ZIP from Releases and review it before installation. Activation is a separate choice. You can also transfer the module ZIP to /media/internal/.unknown-core/modules-inbox through your owner-controlled connection. Use the module ZIP, not GitHub's automatic source-code ZIP.
+
+## Updates
+
+Use [Unknown Core](https://github.com/unkndigital/unknown-core) 0.8.2 or newer. Open Updates, choose Check for updates, then Review this module's available release before applying it. Updates retain saved module settings and ON/OFF state and create a local backup. Update Core first when required. Nothing updates unattended. Keep independent recovery access: backups cannot undo every effect of root code, and power loss can interrupt installation.
 
 ## Scope and Verification
 

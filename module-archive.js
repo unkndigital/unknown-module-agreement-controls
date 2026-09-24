@@ -27,7 +27,8 @@ function compareVersion(a, b) {
   return 0;
 }
 function validateManifest(value, coreVersion) {
-  keys(value, ["schemaVersion", "id", "version", "title", "description", "disableDescription", "publisher", "license", "minCoreVersion", "requiresRoot", "entry", "permissions", "actions", "files", "dependsOn"], "module manifest");
+  keys(value, ["schemaVersion", "id", "version", "title", "description", "disableDescription", "publisher", "license", "minCoreVersion", "requiresRoot", "entry", "permissions", "actions", "files", "dependsOn", "updateStrategy"], "module manifest");
+  if(value.updateStrategy!==undefined&&(value.updateStrategy!=="enable"||compareVersion(value.minCoreVersion,"0.8.0")<0))throw Error("Live updates require the enable strategy and Core 0.8.0 or newer");
   if (value.schemaVersion !== 1 || typeof value.id !== "string" || !ID.test(value.id) || !VERSION.test(value.version) || !VERSION.test(value.minCoreVersion)) throw Error("Unsupported module identity or schema");
   if (compareVersion(coreVersion, value.minCoreVersion) < 0) throw Error("Module requires a newer core version");
   if (!label(value.title, 80) || !label(value.description, 500) || !label(value.publisher, 120) || !label(value.license, 80)) throw Error("Invalid module description");

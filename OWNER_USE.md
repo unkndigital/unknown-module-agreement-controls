@@ -15,8 +15,8 @@ review available consent-withdrawal controls and their consequences. Declining
 consent is not a blanket exemption.
 
 Read the module's actual behavior and restoration limits before enabling it.
-Keep backups and independent root access. Private repository boundaries and
+Keep backups and independent root access. Separate repository boundaries and
 warning text are organizational measures, not guarantees against takedowns,
-liability or misuse. Public publication remains a separate maintainer decision.
+liability or misuse. Publication is not a guarantee of compatibility or safety.
 These are project and support expectations, not additional terms restricting
 the MIT license.
