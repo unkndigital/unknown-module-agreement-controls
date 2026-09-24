@@ -2,7 +2,7 @@
 
 Owner-selected local agreement-prompt handling and backed-up downloaded-app launch metadata changes; never changes consent records.
 
-**Private development candidate 1.0.2.** This repository contains only this module, its build tools and its installable ZIP. Unknown Core is a separate prerequisite; the legacy unkndigital/unknown-home repository is not the modular Core installer.
+**Public experimental release 1.0.2.** This repository contains only this module, its build tools and its installable ZIP. Unknown Core is a separate prerequisite; the legacy unkndigital/unknown-home repository is not the modular Core installer.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Output: dist/agreement-controls-1.0.2.zip and dist/SHA256SUMS.txt. PC architectu
 
 ## Install
 
-While this repository is private, download the ZIP while signed into GitHub and transfer it to /media/internal/.unknown-core/modules-inbox using your existing owner-controlled connection. In Core, inspect the module and install it; activation is a separate choice. Core's current GitHub installer supports public repositories, not private-repository authentication. Use the module ZIP, not GitHub's automatic source-code ZIP.
+In Core, choose Install Modules from GitHub and enter https://github.com/unkndigital/unknown-module-agreement-controls. Select the module ZIP from Releases, inspect it and review before installing. Activation is a separate choice. No GitHub account or credentials are needed on the TV. Alternatively, transfer the module ZIP to /media/internal/.unknown-core/modules-inbox through your owner-controlled connection. Use the module ZIP, not GitHub's automatic source-code ZIP.
 
 ## Scope and Verification
 
